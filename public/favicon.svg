@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="fRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF5544"/>
+      <stop offset="100%" stop-color="#DD2200"/>
+    </linearGradient>
+    <linearGradient id="fGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#55DD44"/>
+      <stop offset="100%" stop-color="#22AA22"/>
+    </linearGradient>
+    <linearGradient id="fBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4499FF"/>
+      <stop offset="100%" stop-color="#2266DD"/>
+    </linearGradient>
+    <linearGradient id="fYellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFDD22"/>
+      <stop offset="100%" stop-color="#DDAA00"/>
+    </linearGradient>
+  </defs>
+  <!-- Red (top-left) - wavy flag piece -->
+  <path d="M3 3.5 Q6.5 2 10 3 L13.5 4 Q14.5 8 14 13 L13 14 Q8.5 14.5 4 13.5 Q2 9 3 3.5Z" fill="url(#fRed)"/>
+  <!-- Green (top-right) - wavy flag piece -->
+  <path d="M18 3.5 Q21.5 2 25 3 L28.5 4 Q29.5 8 29 13 L28 14 Q23.5 14.5 19 13.5 Q17 9 18 3.5Z" fill="url(#fGreen)"/>
+  <!-- Blue (bottom-left) - wavy flag piece -->
+  <path d="M3 18.5 Q6.5 17 10 18 L13.5 19 Q14.5 23 14 28 L13 29 Q8.5 29.5 4 28.5 Q2 24 3 18.5Z" fill="url(#fBlue)"/>
+  <!-- Yellow (bottom-right) - wavy flag piece -->
+  <path d="M18 18.5 Q21.5 17 25 18 L28.5 19 Q29.5 23 29 28 L28 29 Q23.5 29.5 19 28.5 Q17 24 18 18.5Z" fill="url(#fYellow)"/>
+  <!-- Highlights -->
+  <path d="M5 5 Q7 4.5 9 5.5 Q8.5 7.5 7 9 Q5.5 8 5 5Z" fill="rgba(255,255,255,0.25)"/>
+  <path d="M20 5 Q22 4.5 24 5.5 Q23.5 7.5 22 9 Q20.5 8 20 5Z" fill="rgba(255,255,255,0.25)"/>
+  <path d="M5 20 Q7 19.5 9 20.5 Q8.5 22.5 7 24 Q5.5 23 5 20Z" fill="rgba(255,255,255,0.25)"/>
+  <path d="M20 20 Q22 19.5 24 20.5 Q23.5 22.5 22 24 Q20.5 23 20 20Z" fill="rgba(255,255,255,0.25)"/>
+</svg>

@@ -1,0 +1,216 @@
+/* ==========================================================================
+   Windows XP Portfolio - Responsive Styles
+   Mobile and tablet adaptations
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tablet (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  #desktop-icons {
+    gap: 2px;
+    padding: 4px;
+  }
+
+  .desktop-icon {
+    width: 70px;
+  }
+
+  .desktop-icon-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .desktop-icon-label {
+    font-size: 10px;
+  }
+
+  /* Windows become nearly full-screen */
+  .xp-window {
+    min-width: 0 !important;
+    width: calc(100vw - 8px) !important;
+    height: calc(100vh - 48px) !important;
+    left: 4px !important;
+    top: 0 !important;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .xp-window-body {
+    max-height: calc(100vh - 140px);
+  }
+
+  /* About content stacks vertically */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-image svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Skills grid single column */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Start menu full width */
+  #start-menu {
+    width: calc(100vw - 4px);
+    left: 2px;
+  }
+
+  .start-menu-body {
+    min-height: 250px;
+  }
+
+  .start-menu-right {
+    width: 120px;
+  }
+
+  /* Taskbar button text might overflow */
+  .taskbar-btn {
+    max-width: 100px;
+    padding: 0 6px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  #desktop-icons {
+    gap: 0;
+  }
+
+  .desktop-icon {
+    width: 64px;
+    padding: 4px 2px;
+  }
+
+  .desktop-icon-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Windows full-screen */
+  .xp-window {
+    width: 100vw !important;
+    height: calc(100vh - 40px) !important;
+    left: 0 !important;
+    top: 0 !important;
+    border-radius: 0;
+    border-width: 0;
+  }
+
+  .xp-window-titlebar {
+    border-radius: 0;
+  }
+
+  .xp-window-body {
+    max-height: calc(100vh - 130px);
+    padding: 6px;
+  }
+
+  /* Start menu */
+  #start-menu {
+    width: 100vw;
+    left: 0;
+    border-radius: 0;
+  }
+
+  .start-menu-right {
+    display: none;
+  }
+
+  .start-menu-body {
+    min-height: 200px;
+  }
+
+  /* Taskbar */
+  #start-button {
+    padding: 0 8px 0 4px;
+    font-size: 14px;
+  }
+
+  #start-button-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .taskbar-btn {
+    max-width: 80px;
+    min-width: 40px;
+    padding: 0 4px;
+    font-size: 10px;
+  }
+
+  .taskbar-btn-text {
+    display: none;
+  }
+
+  .taskbar-btn-icon {
+    margin: 0 auto;
+  }
+
+  #system-tray {
+    padding: 0 6px;
+    gap: 4px;
+  }
+
+  #clock {
+    font-size: 10px;
+  }
+
+  /* Project cards */
+  .project-tags {
+    gap: 2px;
+  }
+
+  .tech-tag {
+    font-size: 9px;
+    padding: 1px 4px;
+  }
+
+  /* Drive list */
+  .drive-list {
+    flex-direction: column;
+  }
+
+  .drive-item {
+    min-width: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Touch-friendly: larger hit targets
+   -------------------------------------------------------------------------- */
+@media (pointer: coarse) {
+  .xp-window-btn {
+    width: 26px;
+    height: 26px;
+  }
+
+  .desktop-icon {
+    padding: 8px 4px;
+  }
+
+  .start-menu-item {
+    padding: 8px 10px;
+  }
+
+  .context-menu-item {
+    padding: 8px 24px 8px 28px;
+  }
+
+  .taskbar-btn {
+    height: 32px;
+  }
+}

@@ -1,0 +1,296 @@
+/* ==========================================================================
+   Windows XP Portfolio - Start Menu
+   Authentic XP Luna blue theme start menu
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Start Menu Container
+   -------------------------------------------------------------------------- */
+#start-menu {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: 380px;
+  background: #fff;
+  border: 1px solid #003aab;
+  border-radius: 8px 8px 0 0;
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, 0.7),
+    inset -1px 0 0 rgba(255, 255, 255, 0.4),
+    3px 0 8px rgba(0, 0, 0, 0.3),
+    0 -2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
+  overflow: hidden;
+  font-family: "Tahoma", Geneva, Verdana, sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Start Menu Header (User banner)
+   -------------------------------------------------------------------------- */
+.start-menu-header {
+  height: 60px;
+  background: linear-gradient(180deg, #1c5bcb 0%, #1f67da 100%);
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  border-bottom: 2px solid #e57d25;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+}
+
+.start-user-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  background-color: #d2e4f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.start-user-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.start-user-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --------------------------------------------------------------------------
+   Start Menu Body (Two-column layout)
+   -------------------------------------------------------------------------- */
+.start-menu-body {
+  display: flex;
+  min-height: 300px;
+}
+
+/* Left column - White background, frequently used programs */
+.start-menu-left {
+  flex: 1;
+  background: #fff;
+  padding: 4px 0;
+  overflow-y: auto;
+  max-height: 380px;
+}
+
+/* Right column - Light blue background, system folders */
+.start-menu-right {
+  width: 145px;
+  background: #dce9f9;
+  padding: 4px 0;
+  border-left: 1px solid #95bcee;
+  overflow-y: auto;
+  max-height: 380px;
+}
+
+/* --------------------------------------------------------------------------
+   Menu Items
+   -------------------------------------------------------------------------- */
+.start-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+/* Left column items - larger icons */
+.start-menu-left .start-menu-item {
+  padding: 5px 10px;
+}
+
+.start-menu-left .start-menu-item img,
+.start-menu-left .start-menu-item .start-menu-item-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  image-rendering: auto;
+}
+
+/* Right column items - smaller icons */
+.start-menu-right .start-menu-item img,
+.start-menu-right .start-menu-item .start-menu-item-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  image-rendering: auto;
+}
+
+/* Bold items (pinned programs at top) */
+.start-menu-item.bold .start-menu-item-title,
+.start-menu-item.bold .start-menu-item-text {
+  font-weight: bold;
+}
+
+.start-menu-item-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.start-menu-item-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.start-menu-item-title {
+  font-size: 11px;
+}
+
+.start-menu-item-sublabel {
+  font-size: 10px;
+  color: #888;
+}
+
+/* Left column hover - dark blue highlight */
+.start-menu-left .start-menu-item:hover {
+  background: #316ac5;
+  color: #fff;
+}
+
+.start-menu-left .start-menu-item:hover .start-menu-item-sublabel {
+  color: #dbe4f4;
+}
+
+/* Right column hover - slightly lighter blue highlight */
+.start-menu-right .start-menu-item:hover {
+  background: #4c84cb;
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+   Separator Lines
+   -------------------------------------------------------------------------- */
+.start-menu-separator {
+  height: 1px;
+  background: #c0c0c0;
+  margin: 4px 8px;
+}
+
+/* Right column separator - slightly blue-tinted */
+.start-menu-right .start-menu-separator {
+  background: #a4c8ed;
+  margin: 4px 6px;
+}
+
+/* --------------------------------------------------------------------------
+   "All Programs" item with arrow
+   -------------------------------------------------------------------------- */
+.start-menu-item.all-programs {
+  border-top: 1px solid #c0c0c0;
+  margin-top: 4px;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.start-menu-item.all-programs::after {
+  content: "\25B6";
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+  color: #0b9e28;
+}
+
+.start-menu-item.all-programs:hover::after {
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------
+   Start Menu Footer (Log Off / Shut Down)
+   -------------------------------------------------------------------------- */
+.start-menu-footer {
+  background: linear-gradient(
+    to bottom,
+    #438be0 0%,
+    #3b82d9 15%,
+    #3073cb 50%,
+    #2966bc 85%,
+    #235ab1 100%
+  );
+  padding: 6px 8px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  border-top: 1px solid #003aab;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.start-footer-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-family: "Tahoma", Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.start-footer-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.start-footer-item:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.start-footer-item img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  image-rendering: auto;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   Start Menu Animation
+   -------------------------------------------------------------------------- */
+#start-menu {
+  transform-origin: bottom left;
+}
+
+#start-menu.opening {
+  animation: startMenuOpen 0.15s ease-out;
+}
+
+@keyframes startMenuOpen {
+  0% {
+    transform: scaleY(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hidden State
+   -------------------------------------------------------------------------- */
+#start-menu.hidden {
+  display: none;
+}
