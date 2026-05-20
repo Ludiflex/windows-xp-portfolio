@@ -40,32 +40,32 @@ export const state = {
 const WINDOW_CONFIG = {
   about: {
     title: "About Me",
-    icon: "/src/assets/desktop/about.webp",
+    icon: "/assets/desktop/about.webp",
     ...WINDOW_SIZES.about,
   },
   projects: {
     title: "Projects",
-    icon: "/src/assets/desktop/projects.webp",
+    icon: "/assets/desktop/projects.webp",
     ...WINDOW_SIZES.projects,
   },
   skills: {
     title: "Skills",
-    icon: "/src/assets/desktop/Command Prompt.png",
+    icon: "/assets/desktop/Command Prompt.png",
     ...WINDOW_SIZES.skills,
   },
   resume: {
     title: "Resume",
-    icon: "/src/assets/desktop/resume.webp",
+    icon: "/assets/desktop/resume.webp",
     ...WINDOW_SIZES.resume,
   },
   contact: {
     title: "Contact",
-    icon: "/src/assets/desktop/contact.webp",
+    icon: "/assets/desktop/contact.webp",
     ...WINDOW_SIZES.contact,
   },
   mycomputer: {
     title: "My Computer",
-    icon: "/src/assets/desktop/My Videos.png",
+    icon: "/assets/desktop/My Videos.png",
     ...WINDOW_SIZES.mycomputer,
   },
 };
@@ -186,20 +186,20 @@ function buildWindowShell(id, config, bodyClass) {
 
     <div class="xp-window-toolbar">
       <div class="xp-toolbar-btn">
-        <img class="xp-toolbar-btn-icon" src="/src/assets/desktop/back.svg" alt="" />
+        <img class="xp-toolbar-btn-icon" src="/assets/desktop/back.svg" alt="" />
         <span class="xp-toolbar-btn-text">Back</span>
       </div>
       <div class="xp-toolbar-btn">
-        <img class="xp-toolbar-btn-icon" src="/src/assets/desktop/forward.svg" alt="" />
+        <img class="xp-toolbar-btn-icon" src="/assets/desktop/forward.svg" alt="" />
         <span class="xp-toolbar-btn-text">Forward</span>
       </div>
       <div class="xp-toolbar-separator"></div>
       <div class="xp-toolbar-btn">
-        <img class="xp-toolbar-btn-icon" src="/src/assets/desktop/search.svg" alt="" />
+        <img class="xp-toolbar-btn-icon" src="/assets/desktop/search.svg" alt="" />
         <span class="xp-toolbar-btn-text">Search</span>
       </div>
       <div class="xp-toolbar-btn">
-        <img class="xp-toolbar-btn-icon" src="/src/assets/desktop/folders.svg" alt="" />
+        <img class="xp-toolbar-btn-icon" src="/assets/desktop/folders.svg" alt="" />
         <span class="xp-toolbar-btn-text">Folders</span>
       </div>
     </div>
@@ -216,7 +216,7 @@ function buildWindowShell(id, config, bodyClass) {
         />
       </div>
       <div class="xp-window-addressbar-go">
-        <img src="/src/assets/desktop/go-arrow.svg" alt="" />
+        <img src="/assets/desktop/go-arrow.svg" alt="" />
         <span>Go</span>
       </div>
     </div>

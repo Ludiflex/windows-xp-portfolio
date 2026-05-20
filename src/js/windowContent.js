@@ -63,7 +63,7 @@ function renderProjects() {
     return `
       <div class="project-card">
         <div class="project-card-header">
-          <img class="project-card-header-icon" src="/src/assets/desktop/projects.webp" alt="" draggable="false" />
+          <img class="project-card-header-icon" src="/assets/desktop/projects.webp" alt="" draggable="false" />
           ${p.title}
         </div>
         <div class="project-card-body">

@@ -14,7 +14,7 @@ export const USER = {
   title: "YouTuber • Tech Educator • Frontend Developer",
 
   /** Path to your avatar image */
-  avatar: "/src/assets/boot/user.png",
+  avatar: "/assets/boot/user.png",
 
 };
 
@@ -25,19 +25,19 @@ export const SOCIAL = [
     label: "Email",
     value: "hello@ludiflex.com",
     href: "mailto:hello@ludiflex.com",
-    icon: "/src/assets/desktop/Email.png",
+    icon: "/assets/desktop/Email.png",
   },
   {
     label: "Website",
     value: "ludiflex.com",
     href: "https://ludiflex.com",
-    icon: "/src/assets/desktop/projects.webp",
+    icon: "/assets/desktop/projects.webp",
   },
   {
     label: "YouTube",
     value: "youtube.com/@ludiflex",
     href: "https://youtube.com/@ludiflex",
-    icon: "/src/assets/desktop/My Videos.png",
+    icon: "/assets/desktop/My Videos.png",
   },
 ];
 
@@ -145,8 +145,8 @@ export const MYCOMPUTER = {
 
 // ── Resume ─────────────────────────────────────────────────────────────────────
 export const RESUME = {
-  /** Path to your PDF resume file inside /public or /src/assets */
-  pdfPath: "/src/assets/resume/ludiflex-resume.pdf",
+  /** Path to your PDF resume file inside /public or /assets */
+  pdfPath: "/assets/resume/ludiflex-resume.pdf",
 
   /** Filename shown in the toolbar */
   filename: "ludiflex-resume.pdf",

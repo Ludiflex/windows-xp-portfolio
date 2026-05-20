@@ -61,7 +61,7 @@ You do **not** need to touch any core engine files to personalize this portfolio
 
 ### 📂 Edit `src/js/config.js`
 
-Open [src/js/config.js](file:///d:/youtube/windows-xp-portfolio/src/js/config.js) in your editor to customize the following objects:
+Open [src/js/config.js](windows-xp-portfolio/src/js/config.js) in your editor to customize the following objects:
 
 #### 1. Personal Information (`USER`)
 Update your name, title, and profile picture avatar path:
@@ -69,7 +69,7 @@ Update your name, title, and profile picture avatar path:
 export const USER = {
   name: "Your Name",
   title: "Your Title / Professional Tagline",
-  avatar: "/src/assets/boot/user.png", // Path to your profile picture
+  avatar: "/assets/boot/user.png", // Path to your profile picture
 };
 ```
 
@@ -81,7 +81,7 @@ export const SOCIAL = [
     label: "Email",
     value: "your.email@example.com",
     href: "mailto:your.email@example.com",
-    icon: "/src/assets/desktop/Email.png",
+    icon: "/assets/desktop/Email.png",
   },
   // Add other social platforms...
 ];
@@ -138,11 +138,11 @@ export const MYCOMPUTER = {
 
 #### 7. Resume Integration (`RESUME`)
 Link your PDF resume so that it loads inside the portfolio viewer:
-- Place your PDF file in `public/` or `src/assets/resume/`.
+- Place your PDF file in `public/` or `public/assets/resume/`.
 - Reference the path and filename:
 ```javascript
 export const RESUME = {
-  pdfPath: "/src/assets/resume/your-resume.pdf",
+  pdfPath: "/assets/resume/your-resume.pdf",
   filename: "your-resume.pdf",
 };
 ```
@@ -161,8 +161,8 @@ export const WINDOW_SIZES = {
 
 ## 🎨 Asset Customization
 
-- **Wallpaper:** To change the desktop background, replace the image file in `src/assets/desktop/` or update the `#desktop` styling rule inside [src/css/desktop.css](file:///d:/youtube/windows-xp-portfolio/src/css/desktop.css).
-- **Icons & Avatars:** Place custom PNG/SVG files under `src/assets/desktop/` and reference their paths in `src/js/config.js`.
+- **Wallpaper:** To change the desktop background, replace the image file in `public/assets/desktop/` or update the `#desktop` styling rule inside [src/css/desktop.css](windows-xp-portfolio/src/css/desktop.css).
+- **Icons & Avatars:** Place custom PNG/SVG files under `public/assets/desktop/` and reference their paths in `src/js/config.js`.
 - **System Sounds:** Sound files are loaded from `public/sounds/` or similar static directories. You can substitute the `.mp3`/`.wav` files for custom startup or window sound effects.
 
 ---

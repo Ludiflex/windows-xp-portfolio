@@ -48,8 +48,8 @@ function init() {
       soundToggle.title = enabled ? "Sound: On" : "Sound: Off";
       if (soundIcon) {
         soundIcon.src = enabled
-          ? "/src/assets/taskbar/notification-audio-volume-high.png"
-          : "/src/assets/taskbar/notification-audio-volume-muted.png";
+          ? "/assets/taskbar/notification-audio-volume-high.png"
+          : "/assets/taskbar/notification-audio-volume-muted.png";
       }
       if (enabled) playSound("click");
     });
